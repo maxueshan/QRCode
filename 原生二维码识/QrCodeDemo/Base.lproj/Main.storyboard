@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rcD-Zr-B4R">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRO-lG-eHK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.78660012440000004" blue="0.79245221340000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="WcQ-FU-fX0"/>
+                                    <constraint firstAttribute="height" constant="50" id="qdS-F5-gvG"/>
+                                </constraints>
+                                <state key="normal" title="扫描二维码"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WcQ-FU-fX0"/>
+                                        <exclude reference="qdS-F5-gvG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WcQ-FU-fX0"/>
+                                        <include reference="qdS-F5-gvG"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="scanningQrCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r31-CA-RvY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doP-39-K2q">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.78660012440000004" blue="0.79245221340000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="T7Y-Bv-4BP"/>
+                                    <constraint firstAttribute="height" constant="50" id="nkp-zi-b3X"/>
+                                </constraints>
+                                <state key="normal" title="生成二维码"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="T7Y-Bv-4BP"/>
+                                        <exclude reference="nkp-zi-b3X"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="T7Y-Bv-4BP"/>
+                                        <include reference="nkp-zi-b3X"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="creatQrCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="STv-Io-JOA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="输入要生成二维码的内容" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MDE-RR-v46">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Kgl-zz-1Sn"/>
+                                    <constraint firstAttribute="width" constant="160" id="SFk-sp-vNm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Kgl-zz-1Sn"/>
+                                        <exclude reference="SFk-sp-vNm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <mask key="constraints">
+                                        <include reference="Kgl-zz-1Sn"/>
+                                        <include reference="SFk-sp-vNm"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="56E-bF-TsK"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VRO-lG-eHK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bc4-Cg-sT4"/>
+                            <constraint firstItem="MDE-RR-v46" firstAttribute="top" secondItem="doP-39-K2q" secondAttribute="bottom" constant="20" id="U56-vH-0Uc"/>
+                            <constraint firstItem="doP-39-K2q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zzy-NH-Qmq"/>
+                            <constraint firstItem="MDE-RR-v46" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d3E-jc-4V3"/>
+                            <constraint firstItem="doP-39-K2q" firstAttribute="top" secondItem="VRO-lG-eHK" secondAttribute="bottom" constant="20" id="fkA-zt-fgk"/>
+                            <constraint firstItem="VRO-lG-eHK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="qLI-ZW-8AX"/>
+                            <constraint firstItem="doP-39-K2q" firstAttribute="width" secondItem="VRO-lG-eHK" secondAttribute="width" id="v7W-pa-v5n"/>
+                            <constraint firstItem="doP-39-K2q" firstAttribute="height" secondItem="VRO-lG-eHK" secondAttribute="height" id="wmd-r7-kbh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="VRO-lG-eHK"/>
+                                <exclude reference="doP-39-K2q"/>
+                                <exclude reference="MDE-RR-v46"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="U56-vH-0Uc"/>
+                                <exclude reference="d3E-jc-4V3"/>
+                                <exclude reference="Bc4-Cg-sT4"/>
+                                <exclude reference="Zzy-NH-Qmq"/>
+                                <exclude reference="fkA-zt-fgk"/>
+                                <exclude reference="v7W-pa-v5n"/>
+                                <exclude reference="wmd-r7-kbh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="VRO-lG-eHK"/>
+                                <include reference="doP-39-K2q"/>
+                                <include reference="MDE-RR-v46"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="U56-vH-0Uc"/>
+                                <include reference="d3E-jc-4V3"/>
+                                <include reference="Bc4-Cg-sT4"/>
+                                <include reference="Zzy-NH-Qmq"/>
+                                <include reference="fkA-zt-fgk"/>
+                                <include reference="v7W-pa-v5n"/>
+                                <include reference="wmd-r7-kbh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jsl-tZ-Ezf"/>
+                    <connections>
+                        <outlet property="creatQR" destination="doP-39-K2q" id="LEi-Ot-MGp"/>
+                        <outlet property="layoutContraint" destination="qLI-ZW-8AX" id="KL0-vD-yXS"/>
+                        <outlet property="qrCodeField" destination="MDE-RR-v46" id="s4T-Gl-mcQ"/>
+                        <outlet property="scanningQR" destination="VRO-lG-eHK" id="RrD-XP-D1m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="433"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eb6-ry-HFk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rcD-Zr-B4R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J87-r7-qOY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ep3-To-aqs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjh-oi-AhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-441" y="427"/>
+        </scene>
+    </scenes>
+</document>

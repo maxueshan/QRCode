@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF70722B1D93A50000682F4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF70722A1D93A50000682F4C /* main.m */; };
+		BF70722E1D93A50000682F4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF70722D1D93A50000682F4C /* AppDelegate.m */; };
+		BF7072311D93A50000682F4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7072301D93A50000682F4C /* ViewController.m */; };
+		BF7072341D93A50000682F4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7072321D93A50000682F4C /* Main.storyboard */; };
+		BF7072371D93A50000682F4C /* mxsTwoDimensionCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF7072351D93A50000682F4C /* mxsTwoDimensionCode.xcdatamodeld */; };
+		BF7072391D93A50000682F4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7072381D93A50000682F4C /* Assets.xcassets */; };
+		BF70723C1D93A50000682F4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF70723A1D93A50000682F4C /* LaunchScreen.storyboard */; };
+		BF7072491D93AB3200682F4C /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7072481D93AB3200682F4C /* QRCodeGenerator.m */; };
+		BF7072591D93BBA600682F4C /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF70724D1D93BBA600682F4C /* line@2x.png */; };
+		BF70725A1D93BBA600682F4C /* scan.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF70724E1D93BBA600682F4C /* scan.wav */; };
+		BF70725B1D93BBA600682F4C /* scan_net@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF70724F1D93BBA600682F4C /* scan_net@2x.png */; };
+		BF70725C1D93BBA600682F4C /* UIView+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7072511D93BBA600682F4C /* UIView+extension.m */; };
+		BF70725D1D93BBA600682F4C /* XYLBinaryCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7072531D93BBA600682F4C /* XYLBinaryCodeView.m */; };
+		BF70725E1D93BBA600682F4C /* XYLScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7072561D93BBA600682F4C /* XYLScanView.m */; };
+		BF70725F1D93BBA600682F4C /* XYLToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7072581D93BBA600682F4C /* XYLToolButton.m */; };
+		BF7072631D93BBC400682F4C /* ScanningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7072611D93BBC400682F4C /* ScanningViewController.m */; };
+		BF7072641D93BBC400682F4C /* ScanningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7072621D93BBC400682F4C /* ScanningViewController.xib */; };
+		FF37E4BAD6A5A56054B81910 /* libPods-mxsTwoDimensionCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD328878FC293F185392FE /* libPods-mxsTwoDimensionCode.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33FD328878FC293F185392FE /* libPods-mxsTwoDimensionCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mxsTwoDimensionCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9998F0DD37C066C944318448 /* Pods-mxsTwoDimensionCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mxsTwoDimensionCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-mxsTwoDimensionCode/Pods-mxsTwoDimensionCode.release.xcconfig"; sourceTree = "<group>"; };
+		BF7072261D93A4FF00682F4C /* mxsTwoDimensionCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mxsTwoDimensionCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF70722A1D93A50000682F4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF70722C1D93A50000682F4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF70722D1D93A50000682F4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF70722F1D93A50000682F4C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BF7072301D93A50000682F4C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF7072331D93A50000682F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF7072361D93A50000682F4C /* mxsTwoDimensionCode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mxsTwoDimensionCode.xcdatamodel; sourceTree = "<group>"; };
+		BF7072381D93A50000682F4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF70723B1D93A50000682F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF70723D1D93A50000682F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF7072471D93AB3200682F4C /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		BF7072481D93AB3200682F4C /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		BF70724C1D93BBA600682F4C /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		BF70724D1D93BBA600682F4C /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		BF70724E1D93BBA600682F4C /* scan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scan.wav; sourceTree = "<group>"; };
+		BF70724F1D93BBA600682F4C /* scan_net@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_net@2x.png"; sourceTree = "<group>"; };
+		BF7072501D93BBA600682F4C /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extension.h"; sourceTree = "<group>"; };
+		BF7072511D93BBA600682F4C /* UIView+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extension.m"; sourceTree = "<group>"; };
+		BF7072521D93BBA600682F4C /* XYLBinaryCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLBinaryCodeView.h; sourceTree = "<group>"; };
+		BF7072531D93BBA600682F4C /* XYLBinaryCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLBinaryCodeView.m; sourceTree = "<group>"; };
+		BF7072541D93BBA600682F4C /* XYLScaningCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLScaningCode.h; sourceTree = "<group>"; };
+		BF7072551D93BBA600682F4C /* XYLScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLScanView.h; sourceTree = "<group>"; };
+		BF7072561D93BBA600682F4C /* XYLScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLScanView.m; sourceTree = "<group>"; };
+		BF7072571D93BBA600682F4C /* XYLToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLToolButton.h; sourceTree = "<group>"; };
+		BF7072581D93BBA600682F4C /* XYLToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLToolButton.m; sourceTree = "<group>"; };
+		BF7072601D93BBC400682F4C /* ScanningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanningViewController.h; sourceTree = "<group>"; };
+		BF7072611D93BBC400682F4C /* ScanningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanningViewController.m; sourceTree = "<group>"; };
+		BF7072621D93BBC400682F4C /* ScanningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanningViewController.xib; sourceTree = "<group>"; };
+		E990E85EA18BC3E2478AB070 /* Pods-mxsTwoDimensionCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mxsTwoDimensionCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mxsTwoDimensionCode/Pods-mxsTwoDimensionCode.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF7072231D93A4FF00682F4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF37E4BAD6A5A56054B81910 /* libPods-mxsTwoDimensionCode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36C722BE002D2C9BDA908A2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33FD328878FC293F185392FE /* libPods-mxsTwoDimensionCode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF70721D1D93A4FF00682F4C = {
+			isa = PBXGroup;
+			children = (
+				BF7072281D93A50000682F4C /* mxsTwoDimensionCode */,
+				BF7072271D93A4FF00682F4C /* Products */,
+				C73F296BB4E481D9FEA6123A /* Pods */,
+				36C722BE002D2C9BDA908A2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF7072271D93A4FF00682F4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF7072261D93A4FF00682F4C /* mxsTwoDimensionCode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF7072281D93A50000682F4C /* mxsTwoDimensionCode */ = {
+			isa = PBXGroup;
+			children = (
+				BF70724A1D93BBA600682F4C /* XYLScaningCodeKit */,
+				BF70722C1D93A50000682F4C /* AppDelegate.h */,
+				BF70722D1D93A50000682F4C /* AppDelegate.m */,
+				BF70722F1D93A50000682F4C /* ViewController.h */,
+				BF7072301D93A50000682F4C /* ViewController.m */,
+				BF7072601D93BBC400682F4C /* ScanningViewController.h */,
+				BF7072611D93BBC400682F4C /* ScanningViewController.m */,
+				BF7072621D93BBC400682F4C /* ScanningViewController.xib */,
+				BF7072321D93A50000682F4C /* Main.storyboard */,
+				BF7072471D93AB3200682F4C /* QRCodeGenerator.h */,
+				BF7072481D93AB3200682F4C /* QRCodeGenerator.m */,
+				BF7072381D93A50000682F4C /* Assets.xcassets */,
+				BF70723A1D93A50000682F4C /* LaunchScreen.storyboard */,
+				BF70723D1D93A50000682F4C /* Info.plist */,
+				BF7072351D93A50000682F4C /* mxsTwoDimensionCode.xcdatamodeld */,
+				BF7072291D93A50000682F4C /* Supporting Files */,
+			);
+			path = mxsTwoDimensionCode;
+			sourceTree = "<group>";
+		};
+		BF7072291D93A50000682F4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF70722A1D93A50000682F4C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF70724A1D93BBA600682F4C /* XYLScaningCodeKit */ = {
+			isa = PBXGroup;
+			children = (
+				BF70724B1D93BBA600682F4C /* Resources */,
+				BF7072501D93BBA600682F4C /* UIView+extension.h */,
+				BF7072511D93BBA600682F4C /* UIView+extension.m */,
+				BF7072521D93BBA600682F4C /* XYLBinaryCodeView.h */,
+				BF7072531D93BBA600682F4C /* XYLBinaryCodeView.m */,
+				BF7072541D93BBA600682F4C /* XYLScaningCode.h */,
+				BF7072551D93BBA600682F4C /* XYLScanView.h */,
+				BF7072561D93BBA600682F4C /* XYLScanView.m */,
+				BF7072571D93BBA600682F4C /* XYLToolButton.h */,
+				BF7072581D93BBA600682F4C /* XYLToolButton.m */,
+			);
+			path = XYLScaningCodeKit;
+			sourceTree = "<group>";
+		};
+		BF70724B1D93BBA600682F4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF70724C1D93BBA600682F4C /* Config.h */,
+				BF70724D1D93BBA600682F4C /* line@2x.png */,
+				BF70724E1D93BBA600682F4C /* scan.wav */,
+				BF70724F1D93BBA600682F4C /* scan_net@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C73F296BB4E481D9FEA6123A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E990E85EA18BC3E2478AB070 /* Pods-mxsTwoDimensionCode.debug.xcconfig */,
+				9998F0DD37C066C944318448 /* Pods-mxsTwoDimensionCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF7072251D93A4FF00682F4C /* mxsTwoDimensionCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF7072401D93A50000682F4C /* Build configuration list for PBXNativeTarget "mxsTwoDimensionCode" */;
+			buildPhases = (
+				B2421D4D0ED76DD437081521 /* [CP] Check Pods Manifest.lock */,
+				BF7072221D93A4FF00682F4C /* Sources */,
+				BF7072231D93A4FF00682F4C /* Frameworks */,
+				BF7072241D93A4FF00682F4C /* Resources */,
+				704FA518AB41873CF7EC02F8 /* [CP] Embed Pods Frameworks */,
+				6C6D62FE6E32640BFEA032C4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mxsTwoDimensionCode;
+			productName = mxsTwoDimensionCode;
+			productReference = BF7072261D93A4FF00682F4C /* mxsTwoDimensionCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF70721E1D93A4FF00682F4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = xueshan;
+				TargetAttributes = {
+					BF7072251D93A4FF00682F4C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = BF7072211D93A4FF00682F4C /* Build configuration list for PBXProject "mxsTwoDimensionCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF70721D1D93A4FF00682F4C;
+			productRefGroup = BF7072271D93A4FF00682F4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF7072251D93A4FF00682F4C /* mxsTwoDimensionCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF7072241D93A4FF00682F4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF70725A1D93BBA600682F4C /* scan.wav in Resources */,
+				BF7072591D93BBA600682F4C /* line@2x.png in Resources */,
+				BF70723C1D93A50000682F4C /* LaunchScreen.storyboard in Resources */,
+				BF70725B1D93BBA600682F4C /* scan_net@2x.png in Resources */,
+				BF7072641D93BBC400682F4C /* ScanningViewController.xib in Resources */,
+				BF7072391D93A50000682F4C /* Assets.xcassets in Resources */,
+				BF7072341D93A50000682F4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C6D62FE6E32640BFEA032C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mxsTwoDimensionCode/Pods-mxsTwoDimensionCode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		704FA518AB41873CF7EC02F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mxsTwoDimensionCode/Pods-mxsTwoDimensionCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2421D4D0ED76DD437081521 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF7072221D93A4FF00682F4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF70725D1D93BBA600682F4C /* XYLBinaryCodeView.m in Sources */,
+				BF7072631D93BBC400682F4C /* ScanningViewController.m in Sources */,
+				BF70725F1D93BBA600682F4C /* XYLToolButton.m in Sources */,
+				BF7072491D93AB3200682F4C /* QRCodeGenerator.m in Sources */,
+				BF7072311D93A50000682F4C /* ViewController.m in Sources */,
+				BF70725C1D93BBA600682F4C /* UIView+extension.m in Sources */,
+				BF70722E1D93A50000682F4C /* AppDelegate.m in Sources */,
+				BF70725E1D93BBA600682F4C /* XYLScanView.m in Sources */,
+				BF7072371D93A50000682F4C /* mxsTwoDimensionCode.xcdatamodeld in Sources */,
+				BF70722B1D93A50000682F4C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF7072321D93A50000682F4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF7072331D93A50000682F4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF70723A1D93A50000682F4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF70723B1D93A50000682F4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF70723E1D93A50000682F4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF70723F1D93A50000682F4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF7072411D93A50000682F4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E990E85EA18BC3E2478AB070 /* Pods-mxsTwoDimensionCode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = mxsTwoDimensionCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.gopay.mxsTwoDimensionCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF7072421D93A50000682F4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9998F0DD37C066C944318448 /* Pods-mxsTwoDimensionCode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = mxsTwoDimensionCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.gopay.mxsTwoDimensionCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF7072211D93A4FF00682F4C /* Build configuration list for PBXProject "mxsTwoDimensionCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF70723E1D93A50000682F4C /* Debug */,
+				BF70723F1D93A50000682F4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF7072401D93A50000682F4C /* Build configuration list for PBXNativeTarget "mxsTwoDimensionCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF7072411D93A50000682F4C /* Debug */,
+				BF7072421D93A50000682F4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF7072351D93A50000682F4C /* mxsTwoDimensionCode.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF7072361D93A50000682F4C /* mxsTwoDimensionCode.xcdatamodel */,
+			);
+			currentVersion = BF7072361D93A50000682F4C /* mxsTwoDimensionCode.xcdatamodel */;
+			path = mxsTwoDimensionCode.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BF70721E1D93A4FF00682F4C /* Project object */;
+}
